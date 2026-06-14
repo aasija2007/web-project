@@ -1,0 +1,151 @@
+/* ============================================
+   DARK MODE STYLES
+   ============================================ */
+
+[data-theme="dark"] {
+  --text: #f1f5f9;
+  --text-muted: #94a3b8;
+  --bg: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-card: #1e293b;
+  --border: #334155;
+  --shadow: 0 4px 6px -1px rgba(0,0,0,0.4);
+  --shadow-lg: 0 10px 40px rgba(0,0,0,0.5);
+  --shadow-xl: 0 25px 80px rgba(0,0,0,0.6);
+}
+
+[data-theme="dark"] .navbar.glass {
+  background: rgba(15, 23, 42, 0.9);
+  border-bottom-color: rgba(255,255,255,0.06);
+}
+
+[data-theme="dark"] .navbar.scrolled {
+  background: rgba(15, 23, 42, 0.98);
+}
+
+[data-theme="dark"] .mega-menu {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .hero-overlay {
+  background: linear-gradient(135deg, rgba(5,5,15,0.9), rgba(15,0,30,0.85));
+}
+
+[data-theme="dark"] .stats-section {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .stat-card:hover {
+  background: #0f172a;
+}
+
+[data-theme="dark"] .program-card,
+[data-theme="dark"] .event-card,
+[data-theme="dark"] .testimonial-card,
+[data-theme="dark"] .vm-card,
+[data-theme="dark"] .leader-card,
+[data-theme="dark"] .accred-card,
+[data-theme="dark"] .scholar-card,
+[data-theme="dark"] .facility-card,
+[data-theme="dark"] .club-card,
+[data-theme="dark"] .placed-card,
+[data-theme="dark"] .contact-card,
+[data-theme="dark"] .contact-form-wrap,
+[data-theme="dark"] .dc-card,
+[data-theme="dark"] .sem-card,
+[data-theme="dark"] .spec-card,
+[data-theme="dark"] .rec-logo-item,
+[data-theme="dark"] .pl-hero-stats,
+[data-theme="dark"] .elig-card,
+[data-theme="dark"] .form-wrapper,
+[data-theme="dark"] .timeline-content,
+[data-theme="dark"] .chart-wrapper {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .dept-tabs {
+  background: #0f172a;
+}
+
+[data-theme="dark"] .dept-hl,
+[data-theme="dark"] .lab-item,
+[data-theme="dark"] .tech-tag {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .form-group input,
+[data-theme="dark"] .form-group select,
+[data-theme="dark"] .form-group textarea {
+  background: #0f172a;
+  border-color: #334155;
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .dept-specs,
+[data-theme="dark"] .sem-card {
+  background: #0f172a;
+}
+
+[data-theme="dark"] .fee-table th {
+  background: #0f172a;
+}
+
+[data-theme="dark"] .process-step .step-content {
+  background: #1e293b;
+}
+
+[data-theme="dark"] .bar-chart {
+  background: #1e293b;
+}
+
+[data-theme="dark"] .footer {
+  background: #020617;
+}
+
+[data-theme="dark"] .footer-bottom {
+  border-top-color: rgba(255,255,255,0.05);
+}
+
+[data-theme="dark"] .company-logo {
+  filter: grayscale(1) brightness(0.7);
+}
+
+[data-theme="dark"] .company-logo:hover {
+  filter: none;
+}
+
+[data-theme="dark"] .placement-numbers {
+  background: #1e293b;
+}
+
+[data-theme="dark"] .theme-toggle {
+  background: #334155;
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .hamburger span {
+  background: #f1f5f9;
+}
+
+[data-theme="dark"] .scroll-mouse {
+  border-color: rgba(255,255,255,0.3);
+}
+
+[data-theme="dark"] .quick-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+/* Dark mode transition */
+*, *::before, *::after {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.2s ease;
+}
+
+/* Override for elements that shouldn't transition slowly */
+.navbar, .hero-content *, .float-el, canvas {
+  transition: var(--transition) !important;
+}

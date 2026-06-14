@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Prince College of Engineering</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/animations.css"/>
+  <link rel="stylesheet" href="css/darkmode.css"/>
+
+  <!-- Font Awesome (FIXED) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Google Fonts (FIXED) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar glass" id="navbar">
+  <div class="nav-container">
+
+    <div class="nav-logo">
+      <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+      <div class="logo-text">
+        <span class="logo-main">PCE</span>
+        <span class="logo-sub">Prince College of Engineering</span>
+      </div>
+    </div>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="departments.html" class="nav-link">Departments</a></li>
+      <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+      <li><a href="campus.html" class="nav-link">Campus</a></li>
+      <li><a href="placements.html" class="nav-link">Placements</a></li>
+      <li><a href="contact.html" class="nav-link active">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon" id="themeIcon"></i>
+      </button>
+      <a href="admissions.html" class="btn-apply">Apply Now</a>
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg"
+       style="background-image: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1600&q=80');">
+  </div>
+
+  <div class="page-hero-overlay"></div>
+
+  <div class="page-hero-content">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <i class="fas fa-chevron-right"></i>
+      <span>Contact</span>
+    </div>
+
+    <h1>Get in <span class="gradient-text">Touch</span></h1>
+    <p>We're here to help — reach out for admissions, careers, or any enquiry</p>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section section-pad">
+  <div class="container">
+
+    <div class="contact-grid">
+
+      <!-- INFO -->
+      <div class="contact-info reveal-left">
+        <h2>Let's <span class="gradient-text">Connect</span></h2>
+        <p>Whether you're a prospective student, parent, or industry partner, we'd love to hear from you.</p>
+
+        <div class="contact-cards">
+
+          <div class="contact-card">
+            <div class="cc-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h5>Visit Us</h5>
+              <p>123, Prince Nagar, Chennai – 600 095</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="cc-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <h5>Call Us</h5>
+              <p>+91 44 2345 6789<br/>+91 44 2345 6790</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="cc-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h5>Email Us</h5>
+              <p>info@princecollege.edu.in<br/>admissions@princecollege.edu.in</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="cc-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h5>Office Hours</h5>
+              <p>Mon–Fri: 9 AM – 5 PM<br/>Sat: 9 AM – 1 PM</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div class="contact-form-wrap reveal-right">
+
+        <form class="contact-form" id="contactForm" onsubmit="submitContactForm(event)">
+          <h3>Send a Message</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name *</label>
+              <input type="text" placeholder="Full Name" required/>
+            </div>
+
+            <div class="form-group">
+              <label>Your Email *</label>
+              <input type="email" placeholder="email@example.com" required/>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Phone</label>
+              <input type="tel" placeholder="+91 XXXXX XXXXX"/>
+            </div>
+
+            <div class="form-group">
+              <label>Subject *</label>
+              <select required>
+                <option value="">Select Topic</option>
+                <option>Admissions Enquiry</option>
+                <option>Fee Structure</option>
+                <option>Placement Information</option>
+                <option>Campus Visit</option>
+                <option>Industry Partnership</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group full">
+            <label>Message *</label>
+            <textarea rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary btn-submit">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+
+        </form>
+
+        <div class="form-success" id="contactSuccess" style="display:none">
+          <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+          <h3>Message Sent!</h3>
+          <p>Thank you for reaching out. We'll reply within 24 hours.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP (FIXED) -->
+<section class="map-section">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15553.9!2d80.1!3d12.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU0JzAwLjAiTiA4MMKwMDYnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+    width="100%"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+</section>
+
+<!-- DEPARTMENT CONTACTS -->
+<section class="dept-contacts section-pad">
+  <div class="container">
+
+    <div class="section-header reveal-up">
+      <span class="section-tag">Directory</span>
+      <h2 class="section-title">Department <span class="gradient-text">Contacts</span></h2>
+    </div>
+
+    <div class="dept-contact-grid reveal-up">
+
+      <div class="dc-card"><i class="fas fa-laptop-code"></i><h5>CSE / IT</h5><p>cse@princecollege.edu.in</p><p>+91 44 2345 6791</p></div>
+      <div class="dc-card"><i class="fas fa-microchip"></i><h5>ECE</h5><p>ece@princecollege.edu.in</p><p>+91 44 2345 6792</p></div>
+      <div class="dc-card"><i class="fas fa-cogs"></i><h5>Mechanical</h5><p>mech@princecollege.edu.in</p><p>+91 44 2345 6793</p></div>
+      <div class="dc-card"><i class="fas fa-hard-hat"></i><h5>Civil</h5><p>civil@princecollege.edu.in</p><p>+91 44 2345 6794</p></div>
+      <div class="dc-card"><i class="fas fa-bolt"></i><h5>EEE</h5><p>eee@princecollege.edu.in</p><p>+91 44 2345 6795</p></div>
+      <div class="dc-card"><i class="fas fa-briefcase"></i><h5>Placements</h5><p>placements@princecollege.edu.in</p><p>+91 44 2345 6796</p></div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Prince College of Engineering</span>
+          </div>
+          <p>Excellence in engineering education since 1994.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>123, Prince Nagar, Chennai – 600 095</p>
+          <p>+91 44 2345 6789</p>
+          <p>info@princecollege.edu.in</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 Prince College of Engineering. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- UI ELEMENTS -->
+<button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- JS -->
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

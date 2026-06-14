@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prince College of Engineering | Excellence in Education</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/animations.css"/>
+  <link rel="stylesheet" href="css/darkmode.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap)" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ========== SCROLL PROGRESS BAR ========== -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<nav class="navbar glass" id="navbar">
+  <div class="nav-container">
+
+    <div class="nav-logo">
+      <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+      <div class="logo-text">
+        <span class="logo-main">PCE</span>
+        <span class="logo-sub">Prince College of Engineering</span>
+      </div>
+    </div>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html" class="nav-link active">Home</a></li>
+      <li class="mega-menu-parent">
+        <a href="about.html" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
+        <div class="mega-menu">
+          <div class="mega-col">
+            <h4>About PCE</h4>
+            <a href="about.html#vision"><i class="fas fa-eye"></i> Vision & Mission</a>
+            <a href="about.html#history"><i class="fas fa-landmark"></i> History</a>
+            <a href="about.html#leadership"><i class="fas fa-users"></i> Leadership</a>
+          </div>
+          <div class="mega-col">
+            <h4>Achievements</h4>
+            <a href="about.html#accreditation"><i class="fas fa-award"></i> Accreditation</a>
+            <a href="about.html#rankings"><i class="fas fa-trophy"></i> Rankings</a>
+            <a href="about.html#research"><i class="fas fa-flask"></i> Research</a>
+          </div>
+        </div>
+      </li>
+      <li class="mega-menu-parent">
+        <a href="departments.html" class="nav-link">Departments <i class="fas fa-chevron-down"></i></a>
+        <div class="mega-menu">
+          <div class="mega-col">
+            <h4>Engineering</h4>
+            <a href="departments.html#cse"><i class="fas fa-laptop-code"></i> Computer Science</a>
+            <a href="departments.html#ece"><i class="fas fa-microchip"></i> Electronics</a>
+            <a href="departments.html#mech"><i class="fas fa-cogs"></i> Mechanical</a>
+          </div>
+          <div class="mega-col">
+            <h4>More Departments</h4>
+            <a href="departments.html#civil"><i class="fas fa-building"></i> Civil Engineering</a>
+            <a href="departments.html#eee"><i class="fas fa-bolt"></i> Electrical</a>
+            <a href="departments.html#it"><i class="fas fa-network-wired"></i> Information Technology</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+      <li><a href="campus.html" class="nav-link">Campus</a></li>
+      <li><a href="placements.html" class="nav-link">Placements</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">
+        <i class="fas fa-moon" id="themeIcon"></i>
+      </button>
+      <a href="admissions.html" class="btn-apply">Apply Now</a>
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== HERO SECTION ========== -->
+ <div class="hero-bg-image">
+    <div class="hero-overlay"></div>
+</div>
+<section class="hero" id="hero">
+
+  <div class="hero-video-wrap">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="images/collegecampus.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="hero-overlay"></div>
+  </div>
+
+  <canvas id="particlesCanvas"></canvas>
+
+  <div class="hero-content">
+    <div class="hero-badge reveal-up">
+      <i class="fas fa-star"></i> NAAC A+ Accredited Institution
+    </div>
+
+    <h1 class="hero-title reveal-up">
+      Welcome to<br>
+      <span class="gradient-text">Prince College</span><br>
+      of Engineering
+    </h1>
+
+    <p class="hero-subtitle reveal-up">
+      Shaping <span class="typed-text" id="typedText"></span>
+    </p>
+  </div>
+    <div class="hero-cta reveal-up">
+      <a href="admissions.html" class="btn-primary">
+        <span>Apply for 2026</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+      <a href="#stats" class="btn-secondary">
+        <i class="fas fa-play-circle"></i>
+        <span>Virtual Tour</span>
+      </a>
+    </div>
+    <div class="hero-scroll reveal-up">
+      <span>Scroll to explore</span>
+      <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+    </div>
+  </div>
+
+  <!-- Floating elements -->
+  <div class="float-el float-1"><i class="fas fa-code"></i></div>
+  <div class="float-el float-2"><i class="fas fa-atom"></i></div>
+  <div class="float-el float-3"><i class="fas fa-robot"></i></div>
+  <div class="float-el float-4"><i class="fas fa-microchip"></i></div>
+</section>
+
+<!-- ========== STATS SECTION ========== -->
+<section class="stats-section" id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card reveal-up">
+        <div class="stat-icon"><i class="fas fa-users"></i></div>
+        <div class="stat-number" data-target="12500">0</div>
+        <div class="stat-plus">+</div>
+        <div class="stat-label">Students Enrolled</div>
+      </div>
+      <div class="stat-card reveal-up">
+        <div class="stat-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+        <div class="stat-number" data-target="450">0</div>
+        <div class="stat-plus">+</div>
+        <div class="stat-label">Expert Faculty</div>
+      </div>
+      <div class="stat-card reveal-up">
+        <div class="stat-icon"><i class="fas fa-building"></i></div>
+        <div class="stat-number" data-target="6">0</div>
+        <div class="stat-plus"></div>
+        <div class="stat-label">Departments</div>
+      </div>
+      <div class="stat-card reveal-up">
+        <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+        <div class="stat-number" data-target="95">0</div>
+        <div class="stat-plus">%</div>
+        <div class="stat-label">Placement Rate</div>
+      </div>
+      <div class="stat-card reveal-up">
+        <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+        <div class="stat-number" data-target="30">0</div>
+        <div class="stat-plus">+</div>
+        <div class="stat-label">Years of Excellence</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== MARQUEE BAND ========== -->
+<div class="marquee-band">
+  <div class="marquee-track">
+    <span><i class="fas fa-award"></i> NAAC A+ Accredited</span>
+    <span><i class="fas fa-star"></i> NBA Accredited Programs</span>
+    <span><i class="fas fa-trophy"></i> Top Engineering College 2025</span>
+    <span><i class="fas fa-medal"></i> Best Placement Record</span>
+    <span><i class="fas fa-flask"></i> State-of-Art Research Labs</span>
+    <span><i class="fas fa-globe"></i> 50+ Industry Partners</span>
+    <span><i class="fas fa-award"></i> NAAC A+ Accredited</span>
+    <span><i class="fas fa-star"></i> NBA Accredited Programs</span>
+    <span><i class="fas fa-trophy"></i> Top Engineering College 2025</span>
+    <span><i class="fas fa-medal"></i> Best Placement Record</span>
+    <span><i class="fas fa-flask"></i> State-of-Art Research Labs</span>
+    <span><i class="fas fa-globe"></i> 50+ Industry Partners</span>
+  </div>
+</div>
+
+<!-- ========== PROGRAMS SECTION ========== -->
+<section class="programs-section section-pad" id="programs">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="section-tag">Our Programs</span>
+      <h2 class="section-title">Explore <span class="gradient-text">Departments</span></h2>
+      <p class="section-sub">World-class engineering education designed for tomorrow's leaders</p>
+    </div>
+    <div class="programs-grid">
+      <div class="program-card reveal-up" onclick="window.location='departments.html#cse'">
+        <div class="program-icon" style="--c:#6366f1"><i class="fas fa-laptop-code"></i></div>
+        <h3>Computer Science & Engineering</h3>
+        <p>AI, ML, Cloud Computing, Cybersecurity & Software Engineering</p>
+        <div class="program-meta">
+          <span><i class="fas fa-users"></i> 240 Seats</span>
+          <span><i class="fas fa-clock"></i> 4 Years</span>
+        </div>
+        <div class="program-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="program-card reveal-up" onclick="window.location='departments.html#ece'">
+        <div class="program-icon" style="--c:#06b6d4"><i class="fas fa-microchip"></i></div>
+        <h3>Electronics & Communication</h3>
+        <p>VLSI, Embedded Systems, Signal Processing & IoT</p>
+        <div class="program-meta">
+          <span><i class="fas fa-users"></i> 180 Seats</span>
+          <span><i class="fas fa-clock"></i> 4 Years</span>
+        </div>
+        <div class="program-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="program-card reveal-up" onclick="window.location='departments.html#mech'">
+        <div class="program-icon" style="--c:#f59e0b"><i class="fas fa-cogs"></i></div>
+        <h3>Mechanical Engineering</h3>
+        <p>Robotics, CAD/CAM, Thermal Systems & Automotive</p>
+        <div class="program-meta">
+          <span><i class="fas fa-users"></i> 120 Seats</span>
+          <span><i class="fas fa-clock"></i> 4 Years</span>
+        </div>
+        <div class="program-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="program-card reveal-up" onclick="window.location='departments.html#civil'">
+        <div class="program-icon" style="--c:#10b981"><i class="fas fa-hard-hat"></i></div>
+        <h3>Civil Engineering</h3>
+        <p>Structural Design, Environmental Eng. & Smart Cities</p>
+        <div class="program-meta">
+          <span><i class="fas fa-users"></i> 120 Seats</span>
+          <span><i class="fas fa-clock"></i> 4 Years</span>
+        </div>
+        <div class="program-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="program-card reveal-up" onclick="window.location='departments.html#eee'">
+        <div class="program-icon" style="--c:#ef4444"><i class="fas fa-bolt"></i></div>
+        <h3>Electrical & Electronics</h3>
+        <p>Power Systems, Drives, Renewable Energy & Automation</p>
+        <div class="program-meta">
+          <span><i class="fas fa-users"></i> 120 Seats</span>
+          <span><i class="fas fa-clock"></i> 4 Years</span>
+        </div>
+        <div class="program-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="program-card reveal-up" onclick="window.location='departments.html#it'">
+        <div class="program-icon" style="--c:#8b5cf6"><i class="fas fa-network-wired"></i></div>
+        <h3>Information Technology</h3>
+        <p>Web Development, Data Science, Networking & Cloud</p>
+        <div class="program-meta">
+          <span><i class="fas fa-users"></i> 180 Seats</span>
+          <span><i class="fas fa-clock"></i> 4 Years</span>
+        </div>
+        <div class="program-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== WHY PCE SECTION ========== -->
+<section class="why-section section-pad" id="why">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-img reveal-left">
+        <div class="img-stack">
+          <img src="images/collegecampus.jpg" alt="Campus" loading="lazy"/>
+          <div class="img-badge">
+            <i class="fas fa-award"></i>
+            <span>NAAC A+</span>
+          </div>
+        </div>
+      </div>
+      <div class="why-content reveal-right">
+        <span class="section-tag">Why Choose Us</span>
+        <h2 class="section-title">Building <span class="gradient-text">Future Engineers</span> Since 1994</h2>
+        <p class="why-desc">Prince College of Engineering stands as a beacon of technical excellence, combining rigorous academic programs with cutting-edge research facilities and industry-strong connections.</p>
+        <div class="why-features">
+          <div class="why-feat"><i class="fas fa-check-circle"></i><span>AICTE & Anna University Approved</span></div>
+          <div class="why-feat"><i class="fas fa-check-circle"></i><span>State-of-the-art Research Labs</span></div>
+          <div class="why-feat"><i class="fas fa-check-circle"></i><span>50+ MoU with Top Companies</span></div>
+          <div class="why-feat"><i class="fas fa-check-circle"></i><span>Expert Faculty with PhD & Industry Experience</span></div>
+          <div class="why-feat"><i class="fas fa-check-circle"></i><span>World-class Sports & Hostel Facilities</span></div>
+          <div class="why-feat"><i class="fas fa-check-circle"></i><span>Active Entrepreneurship Cell</span></div>
+        </div>
+        <a href="about.html" class="btn-primary">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PLACEMENTS HIGHLIGHT ========== -->
+<section class="placements-highlight section-pad">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="section-tag">Placements 2025</span>
+      <h2 class="section-title">Our Students at <span class="gradient-text">Top Companies</span></h2>
+    </div>
+    <div class="company-logos reveal-up">
+      <div class="company-logo"><img src= "images/collegecompanytcslogo.jpg" alt="TCS" loading="lazy"/></div>
+      <div class="company-logo"><img src= "images/collegecompanyinfosyslogo.jpg"alt="Infosys" loading="lazy"/></div>
+      <div class="company-logo"><img src= "images/collegecompanywiprologo.jpg" alt="Wipro" loading="lazy"/></div>
+      <div class="company-logo"><img src= "images/collegecompanycognizantlogo.jpg" alt="Cognizant" loading="lazy"/></div>
+      <div class="company-logo"><img src="images/collegecompanyaccenturelogo.jpg" alt="Accenture" loading="lazy"/></div>
+      <div class="company-logo"><img src="images/collegeamazoncompanylogo.jpg" alt="Amazon" loading="lazy"/></div>
+      <div class="company-logo"><img src="images/collegecollegemicrosoftcompanylogo.jpg" alt="Microsoft" loading="lazy"/></div>
+      <div class="company-logo"><img src="images/collegegooglecompanylogo.jpg" alt="Google" loading="lazy"/></div>
+    </div>
+    <div class="placement-numbers reveal-up">
+      <div class="pl-num">
+        <span class="pl-val">₹45 LPA</span>
+        <span class="pl-key">Highest Package</span>
+      </div>
+      <div class="pl-divider"></div>
+      <div class="pl-num">
+        <span class="pl-val">₹6.8 LPA</span>
+        <span class="pl-key">Average Package</span>
+      </div>
+      <div class="pl-divider"></div>
+      <div class="pl-num">
+        <span class="pl-val">350+</span>
+        <span class="pl-key">Companies Visited</span>
+      </div>
+      <div class="pl-divider"></div>
+      <div class="pl-num">
+        <span class="pl-val">2800+</span>
+        <span class="pl-key">Offers in 2025</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TESTIMONIALS ========== -->
+<section class="testimonials-section section-pad">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="section-tag">Student Voices</span>
+      <h2 class="section-title">What Our <span class="gradient-text">Alumni Say</span></h2>
+    </div>
+    <div class="testimonial-slider reveal-up" id="testimonialSlider">
+      <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial-card">
+          <div class="t-quote"><i class="fas fa-quote-left"></i></div>
+          <p>"PCE gave me the foundation to crack placements at Amazon. The faculty here are world-class and the labs are better than many IITs I visited."</p>
+          <div class="t-author">
+            <img src="images/collegestudentmale1.jpg" alt="Alumni"/>
+            <div>
+              <strong>Arjun Suresh</strong>
+              <span>SDE at Amazon | CSE 2023</span>
+            </div>
+          </div>
+          <div class="t-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="t-quote"><i class="fas fa-quote-left"></i></div>
+          <p>"The placement cell's support and industry exposure through internships were phenomenal. Got placed at Infosys in my 7th semester itself!"</p>
+          <div class="t-author">
+            <img src="images/collegefemalestudent1.jpg" alt="Alumni"/>
+            <div>
+              <strong>Priya Nair</strong>
+              <span>Systems Engineer at Infosys | IT 2023</span>
+            </div>
+          </div>
+          <div class="t-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="t-quote"><i class="fas fa-quote-left"></i></div>
+          <p>"Research opportunities here are incredible. Our project on IoT got published in an international journal during my final year. Truly memorable!"</p>
+          <div class="t-author">
+            <img src="images/collegestudentmale2.jpg" alt="Alumni"/>
+            <div>
+              <strong>Karthik Raja</strong>
+              <span>Research Engineer at DRDO | ECE 2022</span>
+            </div>
+          </div>
+          <div class="t-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+        </div>
+      </div>
+      <div class="slider-dots" id="sliderDots">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== EVENTS & NEWS ========== -->
+<section class="events-section section-pad">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="section-tag">Latest Updates</span>
+      <h2 class="section-title">Events & <span class="gradient-text">News</span></h2>
+    </div>
+    <div class="events-grid">
+      <div class="event-card reveal-up">
+        <div class="event-img"><img src="images/collegetechspark.jpg" alt="Event" loading="lazy"/></div>
+        <div class="event-tag">Technical Fest</div>
+        <div class="event-date"><i class="fas fa-calendar"></i> March 15, 2026</div>
+        <h3>TechSpark 2026 – National Level Technical Symposium</h3>
+        <p>Join 5000+ students from across India in our flagship annual technical fest with hackathons, paper presentations & workshops.</p>
+        <a href="#" class="event-link">Read More <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="event-card reveal-up">
+        <div class="event-img"><img src="images/collegeplacement.png" alt="Placement" loading="lazy"/></div>
+        <div class="event-tag">Placements</div>
+        <div class="event-date"><i class="fas fa-calendar"></i> February 20, 2026</div>
+        <h3>Google Conducts On-Campus Recruitment Drive</h3>
+        <p>Google visited our campus and extended 12 offers to our final year CSE students with packages up to ₹45 LPA.</p>
+        <a href="#" class="event-link">Read More <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="event-card reveal-up">
+        <div class="event-img"><img src="images/collegeresearchlab.jpg" alt="Research" loading="lazy"/></div>
+        <div class="event-tag">Research</div>
+        <div class="event-date"><i class="fas fa-calendar"></i> January 10, 2026</div>
+        <h3>PCE Receives ₹2 Crore DST Research Grant</h3>
+        <p>Department of Science & Technology awards PCE with a prestigious research grant for AI in Healthcare project.</p>
+        <a href="#" class="event-link">Read More <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== QUICK LINKS BAND ========== -->
+<section class="quick-links-section section-pad">
+  <div class="container">
+    <div class="quick-grid">
+      <a href="admissions.html" class="quick-card reveal-up">
+        <i class="fas fa-file-alt"></i>
+        <span>Apply Now</span>
+      </a>
+      <a href="#" class="quick-card reveal-up">
+        <i class="fas fa-download"></i>
+        <span>Brochure</span>
+      </a>
+      <a href="campus.html" class="quick-card reveal-up">
+        <i class="fas fa-map-marked-alt"></i>
+        <span>Virtual Tour</span>
+      </a>
+      <a href="#" class="quick-card reveal-up">
+        <i class="fas fa-calendar-alt"></i>
+        <span>Academic Calendar</span>
+      </a>
+      <a href="#" class="quick-card reveal-up">
+        <i class="fas fa-user-graduate"></i>
+        <span>Student Portal</span>
+      </a>
+      <a href="contact.html" class="quick-card reveal-up">
+        <i class="fas fa-headset"></i>
+        <span>Helpdesk</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Prince College of Engineering</span>
+          </div>
+          <p>Shaping the engineers of tomorrow with cutting-edge education, research, and innovation since 1994.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="placements.html">Placements</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Departments</h4>
+          <ul>
+            <li><a href="departments.html#cse">Computer Science</a></li>
+            <li><a href="departments.html#ece">Electronics</a></li>
+            <li><a href="departments.html#mech">Mechanical</a></li>
+            <li><a href="departments.html#civil">Civil Engineering</a></li>
+            <li><a href="departments.html#eee">Electrical</a></li>
+            <li><a href="departments.html#it">Information Technology</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="footer-contact">
+            <p><i class="fas fa-map-marker-alt"></i> 123, Prince Nagar, Chennai – 600 095, Tamil Nadu</p>
+            <p><i class="fas fa-phone"></i> +91 44 2345 6789</p>
+            <p><i class="fas fa-envelope"></i> info@princecollege.edu.in</p>
+            <p><i class="fas fa-clock"></i> Mon – Sat: 9:00 AM – 5:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 Prince College of Engineering. All rights reserved. | Designed with <i class="fas fa-heart" style="color:#ef4444"></i> for Excellence</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button class="back-to-top" id="backToTop" title="Back to Top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- Mouse follower -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<script src="js/particles.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

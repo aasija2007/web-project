@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Campus Life | Prince College of Engineering</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/animations.css"/>
+  <link rel="stylesheet" href="css/darkmode.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap)" rel="stylesheet"/>
+</head>
+<body>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<nav class="navbar glass" id="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+      <div class="logo-text"><span class="logo-main">PCE</span><span class="logo-sub">Prince College of Engineering</span></div>
+    </div>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="departments.html" class="nav-link">Departments</a></li>
+      <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+      <li><a href="campus.html" class="nav-link active">Campus</a></li>
+      <li><a href="placements.html" class="nav-link">Placements</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon" id="themeIcon"></i></button>
+      <a href="admissions.html" class="btn-apply">Apply Now</a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('images/collegecampus.jpg')"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Campus Life</span></div>
+    <h1>Life at <span class="gradient-text">PCE</span></h1>
+    <p>A vibrant community of 12,500+ learners on a 50-acre green campus</p>
+  </div>
+</section>
+
+<!-- CAMPUS FACILITIES -->
+<section class="facilities-section section-pad">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="section-tag">Facilities</span>
+      <h2 class="section-title">World-Class <span class="gradient-text">Infrastructure</span></h2>
+    </div>
+    <div class="facilities-grid">
+      <div class="facility-card reveal-up">
+        <img src="images/collegelib.jpg" alt="Library" loading="lazy"/>
+        <div class="facility-info">
+          <i class="fas fa-book"></i>
+          <h4>Central Library</h4>
+          <p>1,00,000+ books, 200+ journals, 24/7 digital access, reading hall for 500 students</p>
+        </div>
+      </div>
+      <div class="facility-card reveal-up">
+        <img src="images/collegesportscomplex.jpg" alt="Sports" loading="lazy"/>
+        <div class="facility-info">
+          <i class="fas fa-running"></i>
+          <h4>Sports Complex</h4>
+          <p>Olympic pool, cricket ground, football field, indoor badminton, basketball & gym</p>
+        </div>
+      </div>
+      <div class="facility-card reveal-up">
+        <img src="images/collegehostel.jpg" alt="Hostel" loading="lazy"/>
+        <div class="facility-info">
+          <i class="fas fa-home"></i>
+          <h4>Hostel Facilities</h4>
+          <p>Separate Boys & Girls hostels for 3000 students, AC rooms, Wi-Fi, dining & laundry</p>
+        </div>
+      </div>
+      <div class="facility-card reveal-up">
+        <img src="images/collegeauditorium.jpg" alt="Auditorium" loading="lazy"/>
+        <div class="facility-info">
+          <i class="fas fa-theater-masks"></i>
+          <h4>Auditorium</h4>
+          <p>2000-seat air-conditioned auditorium with state-of-the-art AV systems</p>
+        </div>
+      </div>
+      <div class="facility-card reveal-up">
+        <img src="images/collegefoodcourt.jpg" alt="Cafeteria" loading="lazy"/>
+        <div class="facility-info">
+          <i class="fas fa-utensils"></i>
+          <h4>Food Court</h4>
+          <p>Hygienic multi-cuisine cafeteria serving 5000 students daily with veg & non-veg options</p>
+        </div>
+      </div>
+      <div class="facility-card reveal-up">
+        <img src="images/collegemedicalcentre.jpg" alt="Medical" loading="lazy"/>
+        <div class="facility-info">
+          <i class="fas fa-heartbeat"></i>
+          <h4>Medical Centre</h4>
+          <p>24/7 on-campus health centre with full-time doctors, nurses and ambulance service</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLUBS & ACTIVITIES -->
+<section class="clubs-section section-pad">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="section-tag">Student Life</span>
+      <h2 class="section-title">Clubs & <span class="gradient-text">Activities</span></h2>
+    </div>
+    <div class="clubs-grid reveal-up">
+      <div class="club-card">
+        <div class="club-icon" style="background:#6366f1"><i class="fas fa-code"></i></div>
+        <h4>Coding Club</h4>
+        <p>Hackathons, competitive coding, DSA sessions and project showcases</p>
+        <span>450+ members</span>
+      </div>
+      <div class="club-card">
+        <div class="club-icon" style="background:#06b6d4"><i class="fas fa-rocket"></i></div>
+        <h4>Robotics Club</h4>
+        <p>Build robots, drones and IoT projects. Participate in national competitions</p>
+        <span>280+ members</span>
+      </div>
+      <div class="club-card">
+        <div class="club-icon" style="background:#f59e0b"><i class="fas fa-music"></i></div>
+        <h4>Cultural Club</h4>
+        <p>Dance, music, drama, fine arts — celebrate diversity through culture</p>
+        <span>600+ members</span>
+      </div>
+      <div class="club-card">
+        <div class="club-icon" style="background:#10b981"><i class="fas fa-lightbulb"></i></div>
+        <h4>E-Cell</h4>
+        <p>Entrepreneurship events, startup pitches, investor meets & mentorship</p>
+        <span>320+ members</span>
+      </div>
+      <div class="club-card">
+        <div class="club-icon" style="background:#ef4444"><i class="fas fa-camera"></i></div>
+        <h4>Photography Club</h4>
+        <p>Workshops, photo walks, exhibitions and freelance opportunities</p>
+        <span>200+ members</span>
+      </div>
+      <div class="club-card">
+        <div class="club-icon" style="background:#8b5cf6"><i class="fas fa-leaf"></i></div>
+        <h4>NSS / NCC</h4>
+        <p>National service, community outreach, defence training and adventure camps</p>
+        <span>800+ members</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO GALLERY -->
+<section class="gallery-section section-pad">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="section-tag">Gallery</span>
+      <h2 class="section-title">Campus <span class="gradient-text">Gallery</span></h2>
+    </div>
+    <div class="gallery-grid reveal-up">
+      <div class="gallery-item tall"><img src="images/collegecampus.jpg" alt="Campus" loading="lazy"/><div class="gallery-overlay"><span>Main Building</span></div></div>
+      <div class="gallery-item"><img src="images/collegeresearchlab.jpg" alt="Lab" loading="lazy"/><div class="gallery-overlay"><span>Research Lab</span></div></div>
+      <div class="gallery-item"><img src="images/collegetechspark.jpg" alt="Event" loading="lazy"/><div class="gallery-overlay"><span>TechSpark Fest</span></div></div>
+      <div class="gallery-item wide"><img src="images/collegesportscomplex.jpg" alt="Sports" loading="lazy"/><div class="gallery-overlay"><span>Sports Complex</span></div></div>
+      <div class="gallery-item"><img src="images/collegegraduationday.jpg" alt="Graduation" loading="lazy"/><div class="gallery-overlay"><span>Graduation Day</span></div></div>
+      <div class="gallery-item"><img src="images/collegeseminar.jpg" alt="Seminar" loading="lazy"/><div class="gallery-overlay"><span>Guest Lecture</span></div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-bottom">
+    <div class="container"><p>© 2026 Prince College of Engineering. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
